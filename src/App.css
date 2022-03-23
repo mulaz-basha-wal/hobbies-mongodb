@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(to right, #484733, #ab39cf);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container {
+  padding: 10px;
+  width: 40%;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group {
+  margin: 10px auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hobby-head {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.remove-btn {
+  width: fit-content;
+  height: fit-content;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.hobby-item {
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 10px;
+}
+.hobby-name,
+.hobby-body {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
   }
 }
